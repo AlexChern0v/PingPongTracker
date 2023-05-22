@@ -44,7 +44,7 @@ window.onload = onLoad;
 function onLoad() {
     reset()
 
-    fetch('https://raw.githubusercontent.com/ecosciug/PingPongTracker/master/sounds/female.json')
+    fetch('https://raw.githubusercontent.com/alexchern0v/PingPongTracker/master/sounds/female.json')
         .then(response => response.json())
         .then(data => {
             announcers.push(data.res)
@@ -52,7 +52,7 @@ function onLoad() {
         .catch(error => {
             console.error('Error:', error);
         });
-    fetch('https://raw.githubusercontent.com/ecosciug/PingPongTracker/master/sounds/male.json')
+    fetch('https://raw.githubusercontent.com/alexchern0v/PingPongTracker/master/sounds/male.json')
         .then(response => response.json())
         .then(data => {
             announcers.push(data.res)
